@@ -2,7 +2,7 @@
     var scene = new BABYLON.Scene(engine);
     var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, BABYLON.Vector3.Zero(), scene);
     var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(20, 100, 2), scene);
-    var sphere = BABYLON.Mesh.CreateSphere("Sphere", 160, 3, scene);
+    var sphere = BABYLON.Mesh.CreateSphere("Sphere", 360, 3, scene);
     var material = new BABYLON.StandardMaterial("kosh", scene);
     material.bumpTexture = new BABYLON.Texture("models/normalMap.jpg", scene);
     material.bumpTexture.level = 1.0;
