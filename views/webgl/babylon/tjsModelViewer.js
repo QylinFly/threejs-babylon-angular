@@ -9,6 +9,11 @@ angular.module("tjsModelViewer", [])
                 },
                 link: function (scope, elem, attr) {
 
+                    if (!WebglDetector.webgl) {
+                        WebglDetector.addGetWebGLMessage({parent: elem[0]});
+                        return;
+                    }
+
                     var canvas = document.createElement('canvas');
                     //var canvas = document.getElementById("renderCanvasaaa");
                     elem[0].appendChild(canvas);

@@ -13,6 +13,10 @@ angular.module("tjsModelViewer", [])
                     var renderer;
                     var previous;
 
+                    if (!WebglDetector.webgl) {
+                        WebglDetector.addGetWebGLMessage({parent: elem[0]});
+                        return;
+                    }
                     // init scene
                     init();
 
