@@ -1,0 +1,57 @@
+<div>
+    <!--<button ng-click="changeModel()">change model</button>-->
+    <!--<input ng-model="assimpModelUrl"></input>-->
+    <!--<canvas id="renderCanvasaaa" touch-action="none" ></canvas>-->
+    <tjs-model-viewer assimp-url="assimpModelUrl" touch-action="none"></tjs-model-viewer>
+
+    <div id="fps"></div>
+    <div id="stats"></div>
+    <div id="status"></div>
+    <div id="controlPanel">
+        <div id="controlsZone">
+            <p>
+                <button id="enableDebug">Debug layer</button>
+            </p>
+            <p>
+                <button id="fullscreen">Fullscreen</button>
+            </p>
+        </div>
+        <div class="tag">Control panel</div>
+        <div class="tag" id="clickableTag"></div>
+    </div>
+    <div id="cameraPanel">
+        <div id="cameraControlsZone">
+            Active camera:<br>
+            <select id="camerasList"></select>
+            <p>
+                Change control method:
+                <button class="buttonControlPanel" id="touchCamera">
+                    <img src="models/assets/CamTouchOff.png" class="buttonImg"/>Touch camera
+                </button>
+                <button class="buttonControlPanel" id="deviceOrientationCamera">
+                    <img src="models/assets/CamDeviceOff.png" class="buttonImg"/>VR Device orientation camera
+                </button>
+                <button class="buttonControlPanel" id="gamepadCamera">
+                    <img src="models/assets/CamGamepadJoy.png" class="buttonImg"/>Gamepad camera
+                </button>
+                <button class="buttonControlPanel" id="virtualJoysticksCamera">
+                    <img src="models/assets/CamVirtualJoy.png" class="buttonImg"/>Virtual joysticks camera
+                </button>
+                <button class="buttonControlPanel" id="anaglyphCamera">
+                    <img src="models/assets/CamAnaGly.png" class="buttonImg"/>Anaglyph camera
+                </button>
+            </p>
+            <p>
+                Post-processes:
+                <button class="smallButtonControlPanel" id="toggleFxaa">Toggle FXAA (antialiasing)</button>
+                <button class="smallButtonControlPanel" id="toggleFsaa4">Toggle FSAA 4X (antialiasing)</button>
+                <button class="smallButtonControlPanel" id="toggleBandW">Toggle Black and white</button>
+                <button class="smallButtonControlPanel" id="toggleSepia">Toggle Sepia</button>
+            </p>
+        </div>
+        <div class="cameraTag"><img src="models/assets/camera.png"/></div>
+        <div class="cameraTag" id="cameraClickableTag"></div>
+    </div>
+    <div id="notSupported" class="hidden">Sorry but your browser does not support WebGL...</div>
+
+</div>
