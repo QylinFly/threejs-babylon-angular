@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularjsThreejsApp', ["tjsModelViewer"])
+angular.module('angularjsBabylonApp', ["webglModelViewer"])
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularjsThreejsApp')
+angular.module('angularjsThreejsApp', [])
     .controller('MainCtrl', function ($scope) {
         $scope.assimpModelUrl = "models/jeep1.ms3d.json";
 

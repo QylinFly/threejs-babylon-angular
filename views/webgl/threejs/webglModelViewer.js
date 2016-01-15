@@ -1,6 +1,6 @@
-angular.module("tjsModelViewer", [])
+angular.module("webglModelViewer", [])
     .directive(
-        "tjsModelViewer",
+        "webglModelViewer",
         [function () {
             return {
                 restrict: "E",
