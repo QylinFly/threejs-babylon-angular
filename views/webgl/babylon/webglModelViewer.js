@@ -9,10 +9,10 @@ angular.module("webglModelViewer", [])
                 },
                 link: function (scope, elem, attr) {
 
-                    //if (!WebglDetector.webgl) {
-                    //    WebglDetector.addGetWebGLMessage({parent: elem[0]});
-                    //    return;
-                    //}
+                    if (!WebglDetector.webgl) {
+                        WebglDetector.addGetWebGLMessage({parent: elem[0]});
+                        return;
+                    }
 
                     var canvas = document.createElement('canvas');
                     //var canvas = document.getElementById("renderCanvasaaa");
